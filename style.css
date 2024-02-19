@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(Sketch\ 3D.woff);
+}
+
+@font-face {
+    font-family:font2;
+    src: url(LTEnergySmRd-Semi-Italic.otf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(upheavtt.ttf);
+}
+body{
+    background-image: url(https://www.insper.edu.br/wp-content/uploads/2023/04/Linguagen-de-programacao-2-shutterstock_1680857539.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    font-family: font1;
+    font-size: 80px; 
+    border-radius: 20px;
+    animation-name: slidein;
+    animation-duration: 5s;
+}
+
+h2{
+    font-family: font1;
+    font-size: 70px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.808);
+    animation-name: slidein;
+    animation-duration: 5s;
+    border-radius: 20px;
+}
+
+p{
+    font-family: font2;
+    background-color: rgba(0, 255, 255, 0.507);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 35px;
+    animation-name: slidein;
+    animation-duration: 5s;
+}
+
+input{
+    font-family: font3;
+    font-size: 60px;
+    margin-left: 9.6em;
+    background-color: aqua;
+    color: black;
+    
+}
+
+input:hover{
+    background-color: black;
+    color: aqua;
+}
+
+@keyframes slidein{
+    from{
+        margin-inline-start: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-top: 0%;
+        width: 100%;
+    }
+} 
+
+img{
+    margin-left: 19.5em;
+    border-radius: 15px;
+    border: solid 7px;
+    color: aqua;
+    background-color: black;
+}
+
+iframe{
+    margin-left: 27em;
+    margin-bottom: 40px;
+}
+
+footer{
+    font-family: font1;
+    font-size: 65px;
+    text-align: center;
+    background-color: aqua;
+}
+
+@media (max-width: 760px){
+    img{
+        left: -80%;
+        position: relative;
+        margin-top: 5%;
+        height: 60%;
+        width: 90%
+    }
+
+    iframe{
+        margin-left: 5%;
+        height: 60%;
+        width: 90%;
+    }
+
+    input{
+        margin-top: 5px;
+        font-size: 60px;
+        margin-left: 42px;
+    }
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+
+    footer{
+
+        font-size: 50px;
+
+    }
+}
